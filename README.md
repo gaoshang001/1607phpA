@@ -1,1 +1,1 @@
-peace and love~
+peace minus one~
