@@ -20,20 +20,19 @@ function firstShow($str){
     $arr = [];
     $brr = [];
     for ($i=0; $i<$len; $i++){
-        $arr[$str[$i]] = 1;
+        //$arr[$str[$i]] = 1;
         if(isset($arr[$str[$i]])){
             $arr[$str[$i]]++;
         }else{
             $arr[$str[$i]] = 1;
         }
         if($arr[$str[$i]] >= 3){
-            return $arr[$str[$i]];
+            return $str[$i];
         }
     }
     return $arr;
 }
-//echo "<pre>";
-//var_dump(firstShow("hello peace and love"));
+var_dump(firstShow("hello peace and love"));
 
 //回文字符串
 function huiwen($str){
@@ -56,9 +55,9 @@ function test($num){
     if($num ==1 || $num ==2) return 1;
     return test($num-1) + test($num-2);
 }
-for ($i=1; $i<=20; $i++){
+/*for ($i=1; $i<=20; $i++){
     echo test($i)."<br>";
-}
+}*/
 
 //数字转字母
 function numSwitch($num){
